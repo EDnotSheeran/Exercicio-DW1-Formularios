@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+.header > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blueviolet;
+    height: 4em;
+}
+.header > ul li{
+    height: 100%;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+}
+.header > ul li:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.header > ul a{
+    color: aliceblue;
+    text-decoration: none;
+    height: 100%;
+}
+main{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    padding: 5px;
+    padding-left: 15px;
+    border: 2px solid aliceblue;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+form input:hover{
+    animation: .1s linear grow;
+    animation-fill-mode: forwards;
+}
+form input:focus{
+    outline: none;
+}
+@keyframes grow{
+    to{
+        transform: scale(1.2,1.2);
+    }
+}
+form button{
+    padding: 5px;
+    background-color: blueviolet;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 1.2em;
+    color: aliceblue;
+}
+form button:hover{
+    animation: .1s linear grow;
+    animation-fill-mode: forwards;
+}
