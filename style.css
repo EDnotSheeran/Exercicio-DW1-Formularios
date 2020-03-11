@@ -85,11 +85,12 @@ main{
     color: aliceblue;
     min-width: 250px;
     align-self: center;
+    margin: 15px 0;
 }
 .form button:hover{
     animation: .1s linear grow;
     animation-fill-mode: forwards;
 }
-.input-purple{
-    background-color: rgba(138, 43, 226,0.2);
+input.input-dark{
+    background-color: rgba(0, 0, 0,0.2);
 }
