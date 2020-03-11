@@ -7,6 +7,7 @@
 }
 html,body{
     height: 100%;
+    background-color: aliceblue;
 }
 .header > ul{
     list-style: none;
@@ -35,24 +36,39 @@ main{
     height: 80vh;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
 }
-form{
+.form{
     display: flex;
     flex-direction: column;
 }
-form input{
+.form div{
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+}
+.form div.last-input-expand input:last-child{
+    width: 100%;
+}
+.form input{
     padding: 5px;
     padding-left: 15px;
     border: 2px solid aliceblue;
     border-radius: 15px;
     font-size: 1.2em;
 }
-form input:hover{
+.form textarea{
+    width: 100%;
+    padding: 5px;
+    padding-left: 15px;
+    border: 2px solid aliceblue;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+.form input:hover{
     animation: .1s linear grow;
     animation-fill-mode: forwards;
 }
-form input:focus{
+.form input:focus{
     outline: none;
 }
 @keyframes grow{
@@ -60,15 +76,20 @@ form input:focus{
         transform: scale(1.2,1.2);
     }
 }
-form button{
+.form button{
     padding: 5px;
     background-color: blueviolet;
     border: 2px solid white;
     border-radius: 15px;
     font-size: 1.2em;
     color: aliceblue;
+    min-width: 250px;
+    align-self: center;
 }
-form button:hover{
+.form button:hover{
     animation: .1s linear grow;
     animation-fill-mode: forwards;
+}
+.input-purple{
+    background-color: rgba(138, 43, 226,0.2);
 }
